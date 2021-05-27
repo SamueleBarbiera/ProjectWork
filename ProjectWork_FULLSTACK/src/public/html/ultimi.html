@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard Ultimi Logs</title>
+        <link rel="icon" type="image/png" href="../immagini/logo.png" sizes="32x32">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/load.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/nav.css" />
+        <link rel="stylesheet" href="../css/href.css" />
+        <link rel="stylesheet" href="../css/table.css" />
+        <link rel="stylesheet" href="../css/storicoform2.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+        <script src="../js/ultimi.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
+        <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    </head>
+    <!------------------------------------------------------------------------------------------->
+    <body>
+        <nav class="m-4" id="nav">
+            <a href="index.html">
+                <img src="../immagini/logo.png" width="30" height="30" alt="">
+            </a>
+            <a style="color: white; text-decoration:none" href="storico.html">DB</a>
+            <a style="color: white; text-decoration:none" href="ultimi.html">Last LOGs</a>
+            <div class="animation start-home"  style="left: 210px;"></div>
+        </nav>
+        </div>
+        <!------------------------------------------------------------------------------------------->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="h5 jumbotron border m-0" style="overflow-x:auto; overflow-y:auto;">
+                        <!-- TABELLA -->
+                        <table id="myTable" class="table table-striped table-bordered display" style="color:black; position:right"> 
+                        <thead>
+                            <tr>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Codice</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 12px;">Articolo</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Data</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">DATA CONS.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Pezzi Prod.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Pezzi Buoni.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Pezzi Scarto.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Pezzi S.B</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Tempo Prod.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Tempo P.Moment.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 13px;">Stato Prod.</th>
+                                <th style="text-decoration:none; font-weight: 900; font-size: 12px;">Dettagli</th>
+                            </tr>
+                        </thead>    
+                        <tfoot>
+                            <tr><th></th></tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------->
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span>
+        </div>
+    </body>
+</html>

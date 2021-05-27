@@ -1,0 +1,15 @@
+.jumbotron {
+    background-size: contain;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size:2vw;
+}
+@media (max-width: 300px) {
+    .jumbotron h3 {
+        font-size:2vw;
+    }
+    .jumbotron h3 {
+        font-size:2vw;
+    }
+}

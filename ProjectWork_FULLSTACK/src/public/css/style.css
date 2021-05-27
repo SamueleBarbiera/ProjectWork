@@ -1,0 +1,35 @@
+*{
+    font-family: 'Calibri Light';
+}
+
+.container {
+    width: 0px;
+    white-space: nowrap;
+}
+
+h1 {
+    font-size: 250%;
+}
+
+.bgg {
+    background-image: linear-gradient(to bottom, #00BC7E, #106f87);
+}
+
+.bggg {
+    background-image: linear-gradient(to bottom, #7c0000, #3f0000);
+}
+
+.bottomdiv
+{
+ position: absolute;
+ left:    0;
+ right:   0;
+ z-index : 100;
+ filter : alpha(opacity=100);
+ POSITION: fixed;
+ bottom: 0;
+}
+.hide {
+ display: none;
+}
+

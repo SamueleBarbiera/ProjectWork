@@ -1,0 +1,57 @@
+body {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom right, #2f4960 10%, #102040);
+}
+
+label {
+    display: block;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    margin-bottom: 23px;
+}
+
+input {
+    display: inline-block;
+}
+
+input[type="datetime-local"] {
+    width: 320px;
+}
+
+input {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+form input:not([type="submit"]) {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.4s;
+    color: #222;
+    font-weight: 300;
+}
+
+form input[type="submit"] {
+    background-color: #2f4960;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.4s;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input:not([type="submit"])::placeholder {
+    color: #ccc;
+}
+form input:not([type="submit"]):valid {
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link:hover { background-color: #020133; } /* CSS link hover (green) */

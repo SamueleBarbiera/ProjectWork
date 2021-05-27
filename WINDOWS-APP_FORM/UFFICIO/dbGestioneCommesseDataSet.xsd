@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dbGestioneCommesseDataSet" targetNamespace="http://tempuri.org/dbGestioneCommesseDataSet.xsd" xmlns:mstns="http://tempuri.org/dbGestioneCommesseDataSet.xsd" xmlns="http://tempuri.org/dbGestioneCommesseDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbGestioneCommesseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbGestioneCommesseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.UFFICIO.Properties.Settings.GlobalReference.Default.dbGestioneCommesseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="viewTotaleTableAdapter" GeneratorDataComponentClassName="viewTotaleTableAdapter" Name="viewTotale" UserDataComponentName="viewTotaleTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="dbGestioneCommesseConnectionString (Settings)" DbObjectName="dbGestioneCommesse.dbo.viewTotale" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, idCommessa, PezziProdotti, PezziScartati, RitardoEsecuzione, Codice, idArticolo, Stato, DataCompletamento, NumeroPezzi, Nome, Descrizione FROM dbo.viewTotale</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="idCommessa" DataSetColumn="idCommessa" />
+              <Mapping SourceColumn="PezziProdotti" DataSetColumn="PezziProdotti" />
+              <Mapping SourceColumn="PezziScartati" DataSetColumn="PezziScartati" />
+              <Mapping SourceColumn="RitardoEsecuzione" DataSetColumn="RitardoEsecuzione" />
+              <Mapping SourceColumn="Codice" DataSetColumn="Codice" />
+              <Mapping SourceColumn="idArticolo" DataSetColumn="idArticolo" />
+              <Mapping SourceColumn="Stato" DataSetColumn="Stato" />
+              <Mapping SourceColumn="DataCompletamento" DataSetColumn="DataCompletamento" />
+              <Mapping SourceColumn="NumeroPezzi" DataSetColumn="NumeroPezzi" />
+              <Mapping SourceColumn="Nome" DataSetColumn="Nome" />
+              <Mapping SourceColumn="Descrizione" DataSetColumn="Descrizione" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dbGestioneCommesseDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dbGestioneCommesseDataSet" msprop:Generator_UserDSName="dbGestioneCommesseDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="viewTotale" msprop:Generator_TableClassName="viewTotaleDataTable" msprop:Generator_TableVarName="tableviewTotale" msprop:Generator_TablePropName="viewTotale" msprop:Generator_RowDeletingName="viewTotaleRowDeleting" msprop:Generator_RowChangingName="viewTotaleRowChanging" msprop:Generator_RowEvHandlerName="viewTotaleRowChangeEventHandler" msprop:Generator_RowDeletedName="viewTotaleRowDeleted" msprop:Generator_UserTableName="viewTotale" msprop:Generator_RowChangedName="viewTotaleRowChanged" msprop:Generator_RowEvArgName="viewTotaleRowChangeEvent" msprop:Generator_RowClassName="viewTotaleRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:int" />
+              <xs:element name="idCommessa" msprop:Generator_ColumnVarNameInTable="columnidCommessa" msprop:Generator_ColumnPropNameInRow="idCommessa" msprop:Generator_ColumnPropNameInTable="idCommessaColumn" msprop:Generator_UserColumnName="idCommessa" type="xs:int" minOccurs="0" />
+              <xs:element name="PezziProdotti" msprop:Generator_ColumnVarNameInTable="columnPezziProdotti" msprop:Generator_ColumnPropNameInRow="PezziProdotti" msprop:Generator_ColumnPropNameInTable="PezziProdottiColumn" msprop:Generator_UserColumnName="PezziProdotti" type="xs:int" minOccurs="0" />
+              <xs:element name="PezziScartati" msprop:Generator_ColumnVarNameInTable="columnPezziScartati" msprop:Generator_ColumnPropNameInRow="PezziScartati" msprop:Generator_ColumnPropNameInTable="PezziScartatiColumn" msprop:Generator_UserColumnName="PezziScartati" type="xs:int" minOccurs="0" />
+              <xs:element name="RitardoEsecuzione" msprop:Generator_ColumnVarNameInTable="columnRitardoEsecuzione" msprop:Generator_ColumnPropNameInRow="RitardoEsecuzione" msprop:Generator_ColumnPropNameInTable="RitardoEsecuzioneColumn" msprop:Generator_UserColumnName="RitardoEsecuzione" type="xs:int" minOccurs="0" />
+              <xs:element name="Codice" msprop:Generator_ColumnVarNameInTable="columnCodice" msprop:Generator_ColumnPropNameInRow="Codice" msprop:Generator_ColumnPropNameInTable="CodiceColumn" msprop:Generator_UserColumnName="Codice" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="idArticolo" msprop:Generator_ColumnVarNameInTable="columnidArticolo" msprop:Generator_ColumnPropNameInRow="idArticolo" msprop:Generator_ColumnPropNameInTable="idArticoloColumn" msprop:Generator_UserColumnName="idArticolo" type="xs:int" minOccurs="0" />
+              <xs:element name="Stato" msprop:Generator_ColumnVarNameInTable="columnStato" msprop:Generator_ColumnPropNameInRow="Stato" msprop:Generator_ColumnPropNameInTable="StatoColumn" msprop:Generator_UserColumnName="Stato" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DataCompletamento" msprop:Generator_ColumnVarNameInTable="columnDataCompletamento" msprop:Generator_ColumnPropNameInRow="DataCompletamento" msprop:Generator_ColumnPropNameInTable="DataCompletamentoColumn" msprop:Generator_UserColumnName="DataCompletamento" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="NumeroPezzi" msprop:Generator_ColumnVarNameInTable="columnNumeroPezzi" msprop:Generator_ColumnPropNameInRow="NumeroPezzi" msprop:Generator_ColumnPropNameInTable="NumeroPezziColumn" msprop:Generator_UserColumnName="NumeroPezzi" type="xs:int" minOccurs="0" />
+              <xs:element name="Nome" msprop:Generator_ColumnVarNameInTable="columnNome" msprop:Generator_ColumnPropNameInRow="Nome" msprop:Generator_ColumnPropNameInTable="NomeColumn" msprop:Generator_UserColumnName="Nome" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Descrizione" msprop:Generator_ColumnVarNameInTable="columnDescrizione" msprop:Generator_ColumnPropNameInRow="Descrizione" msprop:Generator_ColumnPropNameInTable="DescrizioneColumn" msprop:Generator_UserColumnName="Descrizione" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:viewTotale" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
